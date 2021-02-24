@@ -10,6 +10,7 @@ from __future__ import print_function
 import tensorflow.compat.v1 as tf """
 
 from math import *
+import asyncio
 
 """ pow(), sqrt(), mix(), max() and some other functions do not require from math import * """
 
@@ -25,7 +26,9 @@ print(initial_greeting.replace("Alston", "Drew") + "\n" + my_power_level)
 response = input("Who are you: ")
 print("Hello " + response + "!")
 
-def show_nums_and_coordinates(confirmation):
+async def show_nums_and_coordinates(confirmation):
     print(confirmation.capitalize() + ":\n" + names_and_numbers[1] + "\n" + str(coordinate) + "\n" + str(coordinates[2]) + "\n" + "Function ran(text from 'All good here' through this sentence).")
+    await asyncio.sleep(3)
+    print("Thank you for trying this program.")
 
-show_nums_and_coordinates("All Good Here")
+asyncio.run(show_nums_and_coordinates("All Good Here"))
