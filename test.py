@@ -43,6 +43,8 @@ async def working_with_list_flow():
     favorite_numbers.extend(favorite_characters)
     print(fav_nums_copy)
     print(favorite_characters)
+
+    """Conditional loop"""
     for number in favorite_numbers:
         await asyncio.sleep(1)
         print(number)
