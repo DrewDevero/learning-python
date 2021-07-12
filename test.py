@@ -15,7 +15,7 @@ import asyncio
 """ pow(), sqrt(), mix(), max() and some other functions do not require from math import * """
 
 my_name = "Alston"
-my_power_level = "Also, my power level is over " + str(pow(10, 3) * 9) + "!!!" + "Also, also, my favorite number is: " + str(round(2.7))
+my_power_level = "Also, my power level is over " + str(int(pow(10, 3) * 9)) + "!!! " + "Also, also, my favorite number is: " + str(round(2.7))
 initial_greeting = "Hey, it's " + my_name + ". Training and testing for Tri-Sense will live here, eventually."
 names_and_numbers = ["Carl", str(3), "Stan", str(7), "Ken"]
 
